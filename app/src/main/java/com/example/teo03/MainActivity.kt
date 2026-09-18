@@ -125,17 +125,17 @@ fun PantallaCompra() {
 
             Text(text = "Extras", fontSize = 16.sp, fontWeight = FontWeight.Bold)
 
-            Row {
+            Row(modifier = Modifier.fillMaxWidth()) {
                 Checkbox(checked = canchita, onCheckedChange = { canchita = it })
                 Text(text = "Canchita (+S/ 8)", modifier = Modifier.padding(top = 12.dp))
             }
 
-            Row {
+            Row(modifier = Modifier.fillMaxWidth()) {
                 Checkbox(checked = bebida, onCheckedChange = { bebida = it })
                 Text(text = "Bebida (+S/ 5)", modifier = Modifier.padding(top = 12.dp))
             }
 
-            Row {
+            Row(modifier = Modifier.fillMaxWidth()) {
                 Checkbox(checked = cupon, onCheckedChange = { cupon = it })
                 Text(text = "Aplicar cupon (10%)", modifier = Modifier.padding(top = 12.dp))
             }
